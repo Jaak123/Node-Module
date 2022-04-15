@@ -3,7 +3,7 @@ var http = require("http");
 http
   .createServer(function (request, response) {
     response.writeHead(200);
-    response.write(
+    response.write("<style><style/>",
       "<table><td><tr>Name</tr><tr>Age</tr><tr>Gender</tr><tr>Status</tr><td/></table>"
     );
     response.write(
