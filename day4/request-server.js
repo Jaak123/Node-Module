@@ -1,5 +1,6 @@
 var http = require("http");
 var fs = require("fs");
+var queryString = require("querystring");
 
 http
   .createServer((request, response) => {
@@ -15,10 +16,14 @@ http
       response.writeHead(200, { "Content-Type": "audio/mp3" });
       const mp3 = fs.readFileSync("eminem.mp3");
       response.end(mp3);
-    } else if (request.url === "/mp4") {
-      response.writeHead(200, { "Content-Type": "video/mp4" });
-      const mp4 = fs.readFileSync("");
-      response.end(mp4);
+    } else if (request.url === "/q?a=3&x=5&y=6&z=9") {
+      //   console.log("query param");
+      const { x, y, z } = queryString.parse(request.url.slice(3));
+      response.write(`${Number(x) + Number(y) + Number(z)}`);
+      //   console.log(x);
+      //   console.log(y);
+      //   console.log(z);
+      response.end();
     } else {
       response.writeHead(404, { "Content-Type": "text/plain" });
       response.write("Not Found");
