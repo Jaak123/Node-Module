@@ -20,6 +20,8 @@ app.get("/:api", function (req, res) {
           return e.major;
         } else if (req.params.api === "profile") {
           return e;
+        } else if(req.params.api === 'description'){
+            return 
         }
       });
       res.send(filterData);
