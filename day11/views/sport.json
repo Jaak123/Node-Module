@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Basketball",
+    "url": "../public/basket.jpeg"
+  },
+  {
+    "name": "Footbal",
+    "url": "../public/footbal.jpeg"
+  },
+  {
+    "name": "Tennis",
+    "url": "../public/tennis.webp"
+  }
+]
