@@ -40,6 +40,8 @@ app.get("/cv/:jak", function (req, res) {
         res.send(data1);
       } else if (req.params.jak === "description") {
         res.send(data1.description);
+      } else if (req.params.jak === "desc2") {
+        res.send(data.desc2);
       }
     }
   });
