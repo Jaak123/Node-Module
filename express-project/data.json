@@ -1,7 +1,15 @@
-[
+
   {
-    "name": "Janchiv Ariunjin",
+    "hello": "Hello, My name is",
+    "name": "Janchiv",
     "age": "24",
-    "major": "Full-Stack-Developer"
+    "major": "Full-Stack-Developer",
+    "email": "janchivariunjin@gmail.com",
+    "phone": "+976 88109921",
+    "description": "Hello, I am Janchiv Full-Stack-Developer from Mongolia.",
+    "desc2": "If you are looking for a Developer, who is willing to learn more and young energetic one, I am really happy to talk with you!",
+    "dev": "Dev",
+    "item1": "Back-End-Developer",
+    "item2": "Front-End-Developer"
   }
-]
+
